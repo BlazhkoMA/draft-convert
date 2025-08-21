@@ -1,9 +1,10 @@
 {
   "name": "@blazhkoma/draft-convert",
-  "version": "2.1.13",
+  "version": "2.1.13-fork.1",
   "description": "Extensibly serialize & deserialize Draft.js ContentState",
   "main": "lib/index.js",
   "module": "esm/index.js",
+  "types": "index.d.ts",
   
   "repository": {
     "type": "git",
@@ -22,14 +23,15 @@
     "clean": "rimraf ./dist ./lib ./esm",
     "build-and-test": "npm run clean && npm run build && npm run test-once",
     "lint": "eslint src/ test/",
-    "prepare": "npm run build-and-test",
-    "prepublish": "npm run lint && npm run build-and-test",
+    "prepare": "npm run build",
+    "prepublish": "npm run lint && npm run build",
     "prettier:write": "prettier --write ./{src,test}/*.js ./{src,test}/**/*.js"
   },
   "files": [
     "dist",
     "lib",
-    "esm"
+    "esm",
+    "index.d.ts"
   ],
   "keywords": [
     "draft",

@@ -11,7 +11,7 @@ const baseConfig = {
     ],
   },
   externals: {
-    'draft-js': 'Draft',
+    '@blazhkoma/draft-js': 'Draft',
     immutable: 'Immutable',
     react: 'React',
     'react-dom': 'ReactDOM',

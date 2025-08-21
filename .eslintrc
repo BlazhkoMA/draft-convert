@@ -3,11 +3,15 @@
     "hubspot",
     "prettier"
   ],
+  "plugins": [
+    "react"
+  ],
   "rules":{
     "no-undefined": "off",
     "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
     "no-param-reassign": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "react/void-dom-elements-no-children": "off"
   }
 }
   
